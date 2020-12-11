@@ -63,7 +63,7 @@ class Home extends Component {
     Object.keys(destination).forEach((key) => {
       if (destination[key].name === this.state.gt) {
         this.props.history.push(
-          `/about/${destination[key].id}/${lf}/${gt}/${date}`
+          `/search/${destination[key].id}/${lf}/${gt}/${date}`
         );
       }
     });
@@ -87,7 +87,7 @@ class Home extends Component {
         <div className="container">
           <div className="row justify-content-center pb-5 pt-3">
             <div className="col-md-5 block mt-3">
-              <form onSubmit={this.formSubmit}>
+              <form onSubmit={this.formSubmit} method="post">
                 <div className="row">
                   <div className="form-group col-md-6">
                     <label>Leaving From</label>
@@ -124,12 +124,15 @@ class Home extends Component {
                 <div className="row">
                   <div className="form-group col-md-12">
                     <label>Departing On</label>
+                    <br />
                     {/* <input className="form-control form-control-sm ng-untouched ng-pristine ng-invalid"></input> */}
+                    {/* <div className="form-control form-control-sm"> */}
                     <DatePicker
                       className="form-control form-control-sm"
                       selected={this.state.date}
                       onChange={(date) => this.setState({ date: date })}
                     />
+                    {/* </div> */}
                   </div>
                 </div>
                 <button

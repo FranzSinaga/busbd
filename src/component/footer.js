@@ -53,7 +53,7 @@ export default class Footer extends Component {
               </div>
             </div>
             <div className="row pt-5 mb-5 justify-content-center">
-                <img src={footerpic} alt="footer"/>
+                <img src={footerpic} alt="footer" className="img-fluid"/>
             </div>
           </div>
         </div>

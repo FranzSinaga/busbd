@@ -13,7 +13,7 @@ export default function App() {
       <div>
         <Header></Header>
         <Switch>
-          <Route path="/about/:id/:lf/:gt/:do">
+          <Route path="/search/:id/:lf/:gt/:do">
             <Search />
           </Route>
           <Route path="/">
