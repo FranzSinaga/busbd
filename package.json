@@ -8,7 +8,6 @@
   ],
   "main": "src/index.js",
   "dependencies": {
-    "@opuscapita/react-dates": "^0.5.14",
     "react": "17.0.0",
     "react-datepicker": "^3.3.0",
     "react-dom": "17.0.0",
